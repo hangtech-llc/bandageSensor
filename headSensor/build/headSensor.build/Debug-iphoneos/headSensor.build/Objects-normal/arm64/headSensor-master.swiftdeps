@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "797046106421442fb5d40161821d7577"
+build_time: [1594244641, 178584000]
+inputs:
+  "/Users/samanthasu/Documents/Github/bandageSensor/headSensor/headSensor/FourthViewController.swift": [1594100192, 0]
+  "/Users/samanthasu/Documents/Github/bandageSensor/headSensor/headSensor/SecondViewController.swift": [1591303591, 0]
+  "/Users/samanthasu/Documents/Github/bandageSensor/headSensor/headSensor/ViewController.swift": [1591303591, 0]
+  "/Users/samanthasu/Documents/Github/bandageSensor/headSensor/headSensor/ThirdViewController.swift": [1594083310, 0]
+  "/Users/samanthasu/Documents/Github/bandageSensor/headSensor/headSensor/AppDelegate.swift": [1594087167, 0]
+  "/Users/samanthasu/Documents/Github/bandageSensor/headSensor/headSensor/SceneDelegate.swift": [1591303591, 0]

@@ -8,15 +8,26 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
-
+class ThirdViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @IBOutlet var myImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func takePhoto(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            let imagePicker = UIImagePickerController(); imagePicker.delegate = self; imagePicker.sourceType = UIImagePickerController.SourceType.camera; imagePicker.allowsEditing = false; self.present(imagePicker, animated: true, completion: nil)
+        }
+        
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+        let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage; do {  self.myImg.contentMode = .scaleToFill; self.myImg.image = pickedImage; picker.dismiss(animated: true, completion: nil)
+    }
+        
+    }
     /*
     // MARK: - Navigation
 
